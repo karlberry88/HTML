@@ -1,0 +1,35 @@
+<html>
+    <center>
+        <style>
+            span{
+                color:red
+            }
+
+        </style>
+    <script>
+        function addThem(){
+            let firstnum=scrn1.value;
+            let secondnum=scrn2.value;
+
+            if(firstnum==""){
+                errFirstNumber.innerHTML="*First Number is Missing*"
+            }else{
+                errFirstNumber.innerHTML=""
+            }
+            if(secondnum==""){
+                errSecondNumber.innerHTML="**Second Number is Missing**"
+            }else{
+                errSecondNumber.innerHTML=""
+            }
+        }
+  
+    </script>
+    <br><br><br>
+<input type="shafeeq" id="scrn1"> <br>
+<span id="errFirstNumber">?</span><br>
+<input type="text" id="scrn2"> <br>
+<span id="errSecondNumber"> </span> <br>
+<input type="button" value="+" onclick="addThem()"><br>
+<input type="text" id="scrn3"><br>
+</center>
+</html>

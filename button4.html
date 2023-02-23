@@ -1,0 +1,90 @@
+<html>
+    <center>
+        
+        <script>
+        function addition(){
+            let A= num1.value
+            let B= num2.value
+            let C= parseInt(A) + parseInt(B)
+            num3.value =C
+        }
+        function subtraction(){
+            let A= num1.value
+            let B= num2.value
+            let C= parseInt(A) - parseInt(B)
+            num3.value =C
+        }
+        function multiplication(){
+            let A= num1.value
+            let B= num2.value
+            let C= parseInt(A) * parseInt(B)
+            num3.value =C
+        }
+        function division(){
+            let A= num1.value
+            let B= num2.value
+            let C= parseInt(A) / parseInt(B)
+            num3.value =C
+        }
+        function clearall(){
+            num1.value=""
+            num2.value=""
+            num3.value=""
+        }
+        function dosomething(){
+        scrn.value= parseInt(scrn.value) + 1
+    }
+    function reset(){
+            scrn.value=0
+    }
+
+
+
+    </script>
+    <style>
+       table {
+             background-color:rgb(0, 132, 255)
+            }
+    </style>
+
+    <br><br><br>
+<table>
+    <tr>
+        <td> First Number:                 </td>
+        <td> <input type="text" id="num1"> </td>
+    </tr>
+    <tr>
+        <td> Second Number:                </td>
+        <td> <input type="text" id="num2"> </td>
+    </tr>
+</table>
+<br>
+<input type="button" value="+" onclick="addition()">
+<input type="button" value="-" onclick="subtraction()">
+<br>
+<input type="button" value="x" onclick="multiplication()">
+<input type="button" value="/" onclick="division()">
+<br>
+<table>
+    <tr>
+        <td>Results:                      </td>
+        <td><input type="text" id="num3"> </td>
+    </tr>
+</table>
+<br>
+<input type="button" value="Reset" onclick="clearall()">
+<br><br><br>
+<table>
+    <td>number of mouse moves over manchester button</td>
+<input  type="text" 
+            id="scrn" 
+            value="0">
+            </table>
+    <br> <br>
+<input type="button"
+        value="M A N C H E S T E R"
+        onmousemove="dosomething()"
+        onmouseleave="reset()">
+
+</center>
+</html>

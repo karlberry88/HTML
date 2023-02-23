@@ -1,0 +1,21 @@
+<html>
+<script>
+    function dosomething(){
+        scrn.value= parseInt(scrn.value) + 1
+    }
+    function reset(){
+            scrn.value=0
+    }
+
+</script>
+<body>
+    <input  type="text" 
+            id="scrn" 
+            value="0">
+    <br> <br>
+<input type="button"
+        value="M A N C H E S T E R"
+        onmousemove="dosomething()"
+        onmouseleave="reset()">
+</body>
+</html>
